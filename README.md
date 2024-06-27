@@ -1,6 +1,6 @@
 ### Project: Infrastructure as Code (IaC) for AWS Deployments with Python
 
-This guide will walk you through the steps to create a project that uses Infrastructure as Code (IaC) to automate AWS deployments with Python. We'll use AWS CloudFormation for IaC and set up a CI/CD pipeline with GitHub Actions for automated deployment.
+The steps to create a project that uses Infrastructure as Code (IaC) to automate AWS deployments with Python. We'll use AWS CloudFormation for IaC and set up a CI/CD pipeline with GitHub Actions for automated deployment.
 
 ### Prerequisites
 
