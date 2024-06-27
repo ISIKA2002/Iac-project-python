@@ -287,3 +287,56 @@ You'll be prompted to enter your AWS Access Key ID, Secret Access Key, default r
 ### Summary
 
 By following these steps, you have set up an automated deployment pipeline for AWS infrastructure using Python and Infrastructure as Code (IaC) principles. You can now manage and deploy AWS resources in a consistent and automated manner, ensuring that your infrastructure is versioned, repeatable, and reliable.
+
+**Architecture Diagram**
+                              +-----------------------+
+                              |      Developer        |
+                              |      Workstation      |
+                              +-----------+-----------+
+                                          |
+                                          | Python Code (IaC scripts)
+                                          |
+                              +-----------v-----------+
+                              |        IDE/Editor     |
+                              +-----------+-----------+
+                                          |
+                                          |
+                              +-----------v-----------+
+                              |     Version Control   |
+                              |      (GitHub/GitLab)  |
+                              +-----------+-----------+
+                                          |
+                                          | git push
+                                          |
+                              +-----------v-----------+
+                              |  CI/CD Pipeline       |
+                              | (e.g., Jenkins, GitHub|
+                              |  Actions, GitLab CI)  |
+                              +-----------+-----------+
+                                          |
+                                          | Deploy IaC Scripts
+                                          |
+                              +-----------v-----------+
+                              |     AWS CloudFormation|
+                              |        (or Terraform) |
+                              +-----------+-----------+
+                                          |
+                                          |
+                                          |
+    +-------------------------------------v-----------------------------------+
+    |                               AWS Account                              |
+    |                                                                         |
+    | +-------------------+      +-----------------+      +-----------------+ |
+    | |   Networking      |      |   Compute       |      |   Storage       | |
+    | |   (VPC, Subnets,  |      |   (EC2, Lambda) |      |   (S3, EBS)     | |
+    | |   Route Tables)   |      +-----------------+      +-----------------+ |
+    | +-------------------+                                                | |
+    |                                                                         |
+    | +---------------------+   +-----------------+     +------------------+  |
+    | |  Database Services  |   |  Security       |     |  Monitoring      |  |
+    | |  (RDS, DynamoDB)    |   |  (IAM, Security |     |  (CloudWatch,    |  |
+    | |                     |   |   Groups,       |     |   CloudTrail)    |  |
+    | +---------------------+   |   Policies)     |     +------------------+  |
+    |                           +-----------------+                            |
+    +-------------------------------------------------------------------------+
+
