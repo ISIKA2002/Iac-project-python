@@ -289,6 +289,16 @@ You'll be prompted to enter your AWS Access Key ID, Secret Access Key, default r
 By following these steps, you have set up an automated deployment pipeline for AWS infrastructure using Python and Infrastructure as Code (IaC) principles. You can now manage and deploy AWS resources in a consistent and automated manner, ensuring that your infrastructure is versioned, repeatable, and reliable.
 
 **Architecture Diagram**
+<div align="center">
+  <img src="./public/assets/DevSecOps.png" alt="Logo" width="100%" height="100%">
+
+  <br>
+  <a href="http://netflix-clone-with-tmdb-using-react-mui.vercel.app/">
+    <img src="C:\Users\ISIKA\Pictures\Screenshot (863).png" alt="img" width="100" height="32">
+  </a>
+</div>
+
+
                               +-----------------------+
                               |      Developer        |
                               |      Workstation      |
